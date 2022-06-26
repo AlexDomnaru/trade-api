@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7cf5f8d2-e5a6-461d-943f-f9ba220e71bc": {
+      "ProjectGuid": "7cf5f8d2-e5a6-461d-943f-f9ba220e71bc",
+      "DisplayName": "TradeAPI",
+      "ColorIndex": 0
+    },
+    "a18363d5-27f3-4354-aa3e-a06a0a63402b": {
+      "ProjectGuid": "a18363d5-27f3-4354-aa3e-a06a0a63402b",
+      "DisplayName": "TradeAPI.DataAccess",
+      "ColorIndex": 1
+    },
+    "5c4322e8-353e-4a38-ae59-5cba5cfba5c3": {
+      "ProjectGuid": "5c4322e8-353e-4a38-ae59-5cba5cfba5c3",
+      "DisplayName": "GraphQL",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

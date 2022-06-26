@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TradeAPI.DataAccess.Models;
 
 namespace TradeAPI.DataAccess.Repositories.Interfaces
 {
     public interface ISecurityRepository
     {
+        Task<List<Security>> GetAll();
+        Task<Security> GetById(int id);
+        void UpdateSecurity(Security security);
     }
 }

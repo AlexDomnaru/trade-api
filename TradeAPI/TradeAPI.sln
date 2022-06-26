@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAPI", "WebApplication1\TradeAPI.csproj", "{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAPI", "TradeAPI\TradeAPI.csproj", "{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAPI.DataAccess", "TradeAPI.DataAccess\TradeAPI.DataAccess.csproj", "{A18363D5-27F3-4354-AA3E-A06A0A63402B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL", "GraphQL\GraphQL.csproj", "{5C4322E8-353E-4A38-AE59-5CBA5CFBA5C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4322E8-353E-4A38-AE59-5CBA5CFBA5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4322E8-353E-4A38-AE59-5CBA5CFBA5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4322E8-353E-4A38-AE59-5CBA5CFBA5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4322E8-353E-4A38-AE59-5CBA5CFBA5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

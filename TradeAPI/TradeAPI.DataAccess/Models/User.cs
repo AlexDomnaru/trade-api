@@ -1,12 +1,4 @@
-﻿using HotChocolate;
-using HotChocolate.Types;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TradeAPI.DataAccess.Models
+﻿namespace TradeAPI.DataAccess.Models
 {
     public class User
     {
