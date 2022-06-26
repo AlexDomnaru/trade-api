@@ -6,9 +6,9 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 {
     public class UserRepository : IUserRepository
     {
-        private readonly ApplicationContext _context;
+        private readonly IApplicationContext _context;
 
-        public UserRepository(ApplicationContext context)
+        public UserRepository(IApplicationContext context)
         {
             _context = context;
         }
@@ -20,7 +20,7 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 
         public Task<User> GetById(int id)
         {
-            return Task.FromResult(_context.Users.FirstOrDefault(user => user.Id.Equals(id)));
+            return Task.FromResult(_context.Users.First(user => user.Id.Equals(id)));
         }
     }
 }

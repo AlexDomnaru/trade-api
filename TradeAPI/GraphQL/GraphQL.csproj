@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="12.11.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CQRS\CQRS.csproj" />
     <ProjectReference Include="..\TradeAPI.DataAccess\TradeAPI.DataAccess.csproj" />
   </ItemGroup>
 

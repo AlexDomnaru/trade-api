@@ -4,6 +4,127 @@
     "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI\\TradeAPI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj",
+        "projectName": "CQRS",
+        "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\DTO.csproj"
+              },
+              "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\GraphQL\\GraphQL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,6 +149,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj"
+              },
               "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj"
               }
@@ -47,6 +171,10 @@
             "HotChocolate.AspNetCore": {
               "target": "Package",
               "version": "[12.11.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             }
           },
           "imports": [
@@ -152,6 +280,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj"
+              },
               "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\GraphQL\\GraphQL.csproj": {
                 "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\GraphQL\\GraphQL.csproj"
               }
@@ -171,6 +302,10 @@
             "HotChocolate.AspNetCore": {
               "target": "Package",
               "version": "[12.11.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             }
           },
           "imports": [

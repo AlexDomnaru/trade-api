@@ -1,20 +1,15 @@
-﻿using TradeAPI.DataAccess.Models;
-using TradeAPI.DataAccess.Repositories.Interfaces;
+﻿using CQRS.Queries;
+using DTO;
+using MediatR;
 
 namespace GraphQL.Queries
 {
     public class SecurityQueries
     {
-        public async Task<List<Security>> GetAllSecurities([Service] ISecurityRepository securityRepository)
+        public async Task<List<Security>> GetAllSecurities([Service] IMediator mediator)
         {
-            var securities = await securityRepository.GetAll();
+            var securities = await mediator.Send(new GetAllSecuritiesQuery());
             return securities;
-        }
-
-        public async Task<Security> GetSecurityById([Service] ISecurityRepository securityRepository, int id)
-        {
-            var security = await securityRepository.GetById(id);
-            return security;
         }
     }
 }

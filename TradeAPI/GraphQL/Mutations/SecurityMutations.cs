@@ -1,16 +1,13 @@
-﻿using TradeAPI.DataAccess.Models;
-using TradeAPI.DataAccess.Repositories.Interfaces;
+﻿using CQRS.Commands;
+using MediatR;
 
 namespace GraphQL.Mutations
 {
     public class SecurityMutations
     {
-        public async Task<Security> UpdateSecurityMarketPrice([Service] ISecurityRepository securityRepository, int id, double newPrice)
+        public async Task<bool> UpdateSecurityMarketPrice([Service] IMediator mediator, int id, float newPrice)
         {
-            var security = await securityRepository.GetById(id);
-            security.MarketPrice = newPrice;
-            securityRepository.UpdateSecurity(security);
-            return security;
+            return await mediator.Send(new UpdateSecurityCommand(id, newPrice));
         }
     }
 }

@@ -6,6 +6,8 @@ namespace TradeAPI.DataAccess.Repositories.Interfaces
     {
         Task<List<Trade>> GetAll();
         Task<Trade> GetById(int id);
-        void CreateTrade(Trade trade);
+        Task<List<Trade>> GetByUserId(int userId);
+        Task<bool> CreateTrade(Trade trade);
+        Task<bool> DeleteTrade(int id);
     }
 }

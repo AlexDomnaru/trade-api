@@ -6,9 +6,9 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 {
     public class TradeRepository : ITradeRepository
     {
-        private readonly ApplicationContext _context;
+        private readonly IApplicationContext _context;
 
-        public TradeRepository(ApplicationContext context)
+        public TradeRepository(IApplicationContext context)
         {
             _context = context;
         }
@@ -20,12 +20,25 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 
         public Task<Trade> GetById(int id)
         {
-            return Task.FromResult(_context.Trades.FirstOrDefault(trade => trade.Id.Equals(id)));
+            return Task.FromResult(_context.Trades.First(trade => trade.Id.Equals(id)));
         }
 
-        public void CreateTrade(Trade trade)
+        public Task<List<Trade>> GetByUserId(int userId)
         {
+            return Task.FromResult(_context.Trades.Where(trade => trade.UserId.Equals(userId)).ToList());
+        }
+
+        public Task<bool> CreateTrade(Trade trade)
+        {
+            trade.Id = _context.Trades.Max(trade => trade.Id);
             _context.Trades.Add(trade);
+            return Task.FromResult(true);
+        }
+
+        public Task<bool> DeleteTrade(int id)
+        {
+            _context.Trades.RemoveAll(trade => trade.Id.Equals(id));
+            return Task.FromResult(true);
         }
     }
 }

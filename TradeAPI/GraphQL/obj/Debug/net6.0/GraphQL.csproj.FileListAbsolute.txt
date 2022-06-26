@@ -13,3 +13,7 @@ C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\obj\Debug\net6.0\Graph
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\obj\Debug\net6.0\GraphQL.dll
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\obj\Debug\net6.0\ref\GraphQL.dll
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\obj\Debug\net6.0\GraphQL.pdb
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\bin\Debug\net6.0\CQRS.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\bin\Debug\net6.0\DTO.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\bin\Debug\net6.0\CQRS.pdb
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\GraphQL\bin\Debug\net6.0\DTO.pdb

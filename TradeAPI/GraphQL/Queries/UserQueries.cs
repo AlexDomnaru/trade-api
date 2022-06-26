@@ -1,20 +1,15 @@
-﻿using TradeAPI.DataAccess.Models;
-using TradeAPI.DataAccess.Repositories.Interfaces;
+﻿using CQRS.Queries;
+using DTO;
+using MediatR;
 
 namespace GraphQL.Queries
 {
     public class UserQueries
     {
-        public async Task<List<User>> GetAllUsers([Service] IUserRepository userRepository)
+        public async Task<List<User>> GetAllUsers([Service] IMediator mediator)
         {
-            var users = await userRepository.GetAll();
+            var users = await mediator.Send(new GetAllUsersQuery());
             return users;
-        }
-
-        public async Task<User> GetUserById([Service] IUserRepository userRepository, int id)
-        {
-            var user = await userRepository.GetById(id);
-            return user;
         }
     }
 }

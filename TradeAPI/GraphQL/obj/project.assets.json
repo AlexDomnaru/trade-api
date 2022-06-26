@@ -284,6 +284,27 @@
           "lib/net6.0/HotChocolate.Validation.dll": {}
         }
       },
+      "MediatR/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -427,6 +448,31 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "CQRS/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DTO": "1.0.0",
+          "MediatR": "10.0.1",
+          "TradeAPI.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CQRS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CQRS.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
         }
       },
       "TradeAPI.DataAccess/1.0.0": {
@@ -897,6 +943,36 @@
         "strawberryshake-signet.png"
       ]
     },
+    "MediatR/10.0.1": {
+      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+      "type": "package",
+      "path": "mediatr/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "type": "package",
@@ -1290,6 +1366,16 @@
         "version.txt"
       ]
     },
+    "CQRS/1.0.0": {
+      "type": "project",
+      "path": "../CQRS/CQRS.csproj",
+      "msbuildProject": "../CQRS/CQRS.csproj"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
+    },
     "TradeAPI.DataAccess/1.0.0": {
       "type": "project",
       "path": "../TradeAPI.DataAccess/TradeAPI.DataAccess.csproj",
@@ -1298,7 +1384,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CQRS >= 1.0.0",
       "HotChocolate.AspNetCore >= 12.11.1",
+      "MediatR >= 10.0.1",
       "TradeAPI.DataAccess >= 1.0.0"
     ]
   },
@@ -1329,6 +1417,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj": {
+              "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\CQRS\\CQRS.csproj"
+            },
             "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj": {
               "projectPath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI.DataAccess\\TradeAPI.DataAccess.csproj"
             }
@@ -1348,6 +1439,10 @@
           "HotChocolate.AspNetCore": {
             "target": "Package",
             "version": "[12.11.1, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[10.0.1, )"
           }
         },
         "imports": [

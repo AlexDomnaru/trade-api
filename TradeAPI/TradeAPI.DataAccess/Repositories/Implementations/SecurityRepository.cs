@@ -6,9 +6,9 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 {
     public class SecurityRepository : ISecurityRepository
     {
-        private readonly ApplicationContext _context;
+        private readonly IApplicationContext _context;
 
-        public SecurityRepository(ApplicationContext context)
+        public SecurityRepository(IApplicationContext context)
         {
             _context = context;
         }
@@ -19,13 +19,14 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
 
         public Task<Security> GetById(int id)
         {
-            return Task.FromResult(_context.Securities.FirstOrDefault(user => user.Id.Equals(id)));
+            return Task.FromResult(_context.Securities.First(security => security.Id.Equals(id)));
         }
 
-        public void UpdateSecurity(Security security)
+        public Task<bool> UpdateSecurity(Security security)
         {
             var securityToUpdate = _context.Securities.Find(s => s.Id.Equals(security.Id));
             securityToUpdate = security;
+            return Task.FromResult(true);
         }
     }
 }

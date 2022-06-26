@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f/gbiidZoMHP9rqemFNQOyLYuuZObPmxVfSko4Ua2RtGcHIMnXhGx7Gsi+J+wqEEq1qvWtOS/3dqeE2dCGELdQ==",
+  "dgSpecHash": "JvLSVh52gkwg2ge51nNxe8NIh0QhD7evNhAFeN6N4FmaoWrn9J0nPLRPgG3ZBCCPGN/Rvm67/3x8Ygr/fBxQKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\TradeAPI\\TradeAPI.csproj",
   "expectedPackageFiles": [
@@ -24,9 +24,12 @@
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.utilities\\12.11.1\\hotchocolate.utilities.12.11.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.utilities.introspection\\12.11.1\\hotchocolate.utilities.introspection.12.11.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.validation\\12.11.1\\hotchocolate.validation.12.11.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.4\\microsoft.extensions.dependencyinjection.3.1.4.nupkg.sha512",
-    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.4\\microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.4\\microsoft.extensions.diagnosticadapter.3.1.4.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.objectpool\\3.1.4\\microsoft.extensions.objectpool.3.1.4.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.options\\3.1.4\\microsoft.extensions.options.3.1.4.nupkg.sha512",

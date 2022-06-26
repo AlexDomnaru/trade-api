@@ -73,3 +73,10 @@ C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\obj\Debug\net6.0\Trad
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\obj\Debug\net6.0\ref\TradeAPI.dll
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\obj\Debug\net6.0\TradeAPI.pdb
 C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\obj\Debug\net6.0\TradeAPI.genruntimeconfig.cache
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\MediatR.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\CQRS.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\DTO.dll
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\CQRS.pdb
+C:\Users\Alex\Desktop\TradeAPI\trade-api\TradeAPI\TradeAPI\bin\Debug\net6.0\DTO.pdb

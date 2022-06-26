@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bBa7eIHAZiUvTaicui3+HdWmKB2b6jiCtr9B+QPYKt9qNbCKAn0oh03PA+egruQr1t4Z40ChK7twH6oh3ozMBQ==",
+  "dgSpecHash": "m1TtAEjOGYhfhSuEPkrSl/Baj1WuCInLA4U1NrgjUrl8qNHCD+rkZgp+nyYn2vuBWMLW6BVmRWbwyWjg/JhUow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\Desktop\\TradeAPI\\trade-api\\TradeAPI\\GraphQL\\GraphQL.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,8 @@
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.utilities\\12.11.1\\hotchocolate.utilities.12.11.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.utilities.introspection\\12.11.1\\hotchocolate.utilities.introspection.12.11.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\hotchocolate.validation\\12.11.1\\hotchocolate.validation.12.11.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.4\\microsoft.extensions.dependencyinjection.3.1.4.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.4\\microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",

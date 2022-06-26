@@ -6,6 +6,6 @@ namespace TradeAPI.DataAccess.Repositories.Interfaces
     {
         Task<List<Security>> GetAll();
         Task<Security> GetById(int id);
-        void UpdateSecurity(Security security);
+        Task<bool> UpdateSecurity(Security security);
     }
 }

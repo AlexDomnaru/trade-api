@@ -1,5 +1,4 @@
-﻿using GraphQL.Resolvers;
-using TradeAPI.DataAccess.Models;
+﻿using DTO;
 
 namespace GraphQL.Types
 {
@@ -10,9 +9,6 @@ namespace GraphQL.Types
             descriptor.Field(u => u.Id).Type<IdType>();
             descriptor.Field(u => u.SecurityCode).Type<StringType>();
             descriptor.Field(u => u.MarketPrice).Type<FloatType>();
-
-            descriptor.Field<SecurityResolver>(t => t.GetSecurities(default));
-            descriptor.Field<SecurityResolver>(t => t.GetSecurity(default, default));
         }
     }
 }

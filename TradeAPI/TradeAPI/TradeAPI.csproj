@@ -7,14 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="12.11.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CQRS\CQRS.csproj" />
     <ProjectReference Include="..\GraphQL\GraphQL.csproj" />
   </ItemGroup>
 
