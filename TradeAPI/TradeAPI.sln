@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAPI", "WebApplication1\TradeAPI.csproj", "{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAPI.DataAccess", "TradeAPI.DataAccess\TradeAPI.DataAccess.csproj", "{A18363D5-27F3-4354-AA3E-A06A0A63402B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF5F8D2-E5A6-461D-943F-F9BA220E71BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18363D5-27F3-4354-AA3E-A06A0A63402B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
