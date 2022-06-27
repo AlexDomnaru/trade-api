@@ -6,6 +6,6 @@ namespace TradeAPI.DataAccess.DataContext
     {
         List<User> Users { get; }
         List<Security> Securities { get; }
-        List<Trade> Trades { get; }
+        List<Trade> Trades { get; set; }
     }
 }

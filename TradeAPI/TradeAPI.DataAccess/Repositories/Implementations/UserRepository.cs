@@ -18,6 +18,11 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
             return Task.FromResult(_context.Users.ToList());
         }
 
+        public Task<List<User>> GetByIds(IEnumerable<int> ids)
+        {
+            return Task.FromResult(_context.Users.Where(user => ids.Contains(user.Id)).ToList());
+        }
+
         public Task<User> GetById(int id)
         {
             return Task.FromResult(_context.Users.First(user => user.Id.Equals(id)));

@@ -23,15 +23,24 @@ namespace CQRS.Handlers
             var portfolios = new List<Portfolio>();
 
             var users = await _userRepository.GetAll();
-            var securities = await _securityRepository.GetAll();
+            var userIds = users.Select(user => user.Id);
+
+            var trades = await _tradeRepository.GetByUserIds(userIds);
+            var tradesDictionary = userIds.ToDictionary(id => id, id => trades.Where(trade => trade.UserId.Equals(id)) );
+
+            var securityIds = trades.Select(trade => trade.SecurityId);
+            var securitiesDictionary = (await _securityRepository.GetByIds(securityIds)).ToDictionary(security => security.Id, security => security);
+
             foreach (var user in users)
             {
-                var trades = await _tradeRepository.GetByUserId(user.Id);
+                var userTrades = tradesDictionary[user.Id];
+
                 var totalMarketValue = 0.0;
                 var totalPurchaseValue = 0.0;
-                foreach (var trade in trades)
+                
+                foreach (var trade in userTrades)
                 {
-                    var security = securities.First(security => security.Id.Equals(trade.SecurityId));
+                    var security = securitiesDictionary[trade.SecurityId];
                     totalMarketValue += security.MarketPrice * trade.Quantity;
                     totalPurchaseValue += trade.TradePrice * trade.Quantity;
                 }

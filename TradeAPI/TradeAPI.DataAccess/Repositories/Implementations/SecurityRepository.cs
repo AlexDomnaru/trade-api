@@ -17,6 +17,11 @@ namespace TradeAPI.DataAccess.Repositories.Implementations
             return Task.FromResult(_context.Securities.ToList());
         }
 
+        public Task<List<Security>> GetByIds(IEnumerable<int> ids)
+        {
+            return Task.FromResult(_context.Securities.Where(security => ids.Contains(security.Id)).ToList());
+        }
+
         public Task<Security> GetById(int id)
         {
             return Task.FromResult(_context.Securities.First(security => security.Id.Equals(id)));

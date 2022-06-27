@@ -23,10 +23,17 @@ namespace CQRS.Handlers
             var trades = new List<Trade>();
 
             var databaseTrades = await _tradeRepository.GetAll();
+
+            var userIds = databaseTrades.Select(trade => trade.UserId).ToList();
+            var usersDictionary = (await _userRepository.GetByIds(userIds)).ToDictionary(user => user.Id, user => user);
+
+            var securityIds = databaseTrades.Select(trade => trade.SecurityId);
+            var securitiesDictionary = (await _securityRepository.GetByIds(securityIds)).ToDictionary(security => security.Id, security => security);
+
             foreach (var trade in databaseTrades)
             {
-                var user = await _userRepository.GetById(trade.UserId);
-                var security = await _securityRepository.GetById(trade.SecurityId);
+                var user = usersDictionary[trade.UserId];
+                var security = securitiesDictionary[trade.SecurityId];
 
                 trades.Add(new Trade(trade.Id, trade.TradePrice, trade.Quantity, trade.Date,
                     new Security(security.Id, security.SecurityCode, security.MarketPrice),
